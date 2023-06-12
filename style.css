@@ -401,12 +401,10 @@ a:hover {
 
 
 
+/*============grid for 4 columns (maintains four columns by shrinking images)============*/
 
 
-/*============grid for 4 columns============*/
-
-
-.grid-4 {
+.grid_4 {
 	display: grid;
 	text-align: center;
 	/* width: 73%; */
@@ -425,7 +423,7 @@ a:hover {
 
 
 
-/*============variable grid to adjust for different screen sizes============*/
+/*============variable grid to adjust for different screen sizes 4 to 2 columns============*/
 
 
 .grid_items {
@@ -464,3 +462,79 @@ a:hover {
 
 
 
+/*============variable grid to adjust for different screen sizes 2 to 1 columns============*/
+
+
+.grid_items_2_1 {
+	padding: 0px;
+	margin-left: 20px;
+	margin-right: 20px;
+	display: grid;
+	text-align: center;
+	grid-template-columns: 100%;
+	grid-column-gap: 20px;
+	grid-row-gap: 40px;
+	margin-bottom: 20px;
+	background-color: light blue; /* not present */
+}
+
+.grid_items_2_1 > div {
+	background-color: light blue; /* transparent */
+	padding: 0px;
+}
+
+
+@media only screen and (min-width: 481px) { /*640px*/
+  .grid_items_2_1 {
+    grid-template-columns: 100%;
+    grid-column-gap: 0%;
+  }
+}
+
+
+@media only screen and (min-width: 769px) { /*981px*/
+  .grid_items_2_1 {
+    grid-template-columns: 48.5% 48.5%;
+    grid-column-gap: 3%;
+  }
+}
+
+
+
+
+/*============variable grid to adjust for different screen sizes 5 to 2 columns============*/
+
+
+.grid_items_5_1 {
+	padding: 0px;
+	margin-left: 20px;
+	margin-right: 20px;
+	display: grid;
+	text-align: center;
+	grid-template-columns: 100%;
+	grid-column-gap: 20px;
+	grid-row-gap: 40px;
+	margin-bottom: 20px;
+	background-color: light blue; /* not present */
+}
+
+.grid_items_5_1 > div {
+	background-color: light blue; /* transparent */
+	padding: 0px;
+}
+
+
+@media only screen and (min-width: 481px) { /*640px*/
+  .grid_items_5_1 {
+    grid-template-columns: 48.5% 48.5%;
+    grid-column-gap: 3%;
+  }
+}
+
+
+@media only screen and (min-width: 769px) { /*981px*/
+  .grid_items_5_1 {
+    grid-template-columns: 18% 18% 18% 18% 18%;
+    grid-column-gap: 2.5%;
+  }
+}
