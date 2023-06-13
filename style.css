@@ -401,140 +401,329 @@ a:hover {
 
 
 
+/*============grids============*/
+
+/*============grid for 2 columns (maintains two columns by shrinking images)============*/
+
+
+.grid-container-2 {
+	display: grid;
+    grid-template-columns: 48.5% 48.5%;
+    grid-column-gap: 3%;
+	grid-row-gap: 40px;
+	background-color: transparent;
+	padding: 0px;
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.grid-container-2 > div {
+	/* border: 1px solid black; */
+	background-color: transparent;
+	min-height: 0;
+	min-width: 0; 
+}
+
+/*============grid for 3 columns (maintains three columns by shrinking images)============*/
+
+
+.grid-container-3 {
+	display: grid;
+	grid-template-columns: 32% 32% 32%;
+	grid-column-gap: 2%;
+	grid-row-gap: 40px;
+	background-color: transparent;
+	padding: 0px;
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.grid-container-3 > div {
+	/* border: 1px solid black; */
+	background-color: transparent;
+	min-height: 0;
+	min-width: 0; 
+}
+
 /*============grid for 4 columns (maintains four columns by shrinking images)============*/
 
 
-.grid_4 {
+.grid-container-4 {
 	display: grid;
-	text-align: center;
-	/* width: 73%; */
-	min-height: 0;
-	min-width: 0; 
+	grid-template-columns: 23.5% 23.5% 23.5% 23.5%;
+	grid-column-gap: 2%;
+	grid-row-gap: 40px;
+	background-color: transparent;
+	padding: 0px;
 	margin-left: 20px;
 	margin-right: 20px;
-	height: 100%;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.grid-container-4 > div {
+	/* border: 1px solid black; */
+	background-color: transparent;
+	min-height: 0;
+	min-width: 0; 
+}
+
+/*============grid for 5 columns (maintains five columns by shrinking images)============*/
+
+
+.grid-container-5 {
+	display: grid;
+	grid-template-columns: 18% 18% 18% 18% 18%;
+	grid-column-gap: 2.5%;
+	grid-row-gap: 40px;
+	background-color: transparent;
 	padding: 0px;
-	/* grid-template-columns: repeat(4, 1fr); */
-	grid-auto-columns: minmax(0, 1fr); grid-auto-flow: column;
-	grid-gap: 20px;
-	margin-bottom: 30px;
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.grid-container-5 > div {
+	/* border: 1px solid black; */
+	background-color: transparent;
+	min-height: 0;
+	min-width: 0; 
+}
+
+/*============grid for 6 columns (maintains six columns by shrinking images)============*/
+
+
+.grid-container-6 {
+	display: grid;
+	grid-template-columns: 15% 15% 15% 15% 15% 15%;
+	grid-column-gap: 2%;
+	grid-row-gap: 40px;
+	background-color: transparent;
+	padding: 0px;
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.grid-container-6 > div {
+	/* border: 1px solid black; */
+	background-color: transparent;
+	min-height: 0;
+	min-width: 0; 
+}
+
+/*============grid for 8 columns (maintains eight columns by shrinking images)============*/
+
+
+.grid-container-8 {
+	display: grid;
+	grid-template-columns: 10.75% 10.75% 10.75% 10.75% 10.75% 10.75% 10.75% 10.75%;
+	grid-column-gap: 2%;
+	grid-row-gap: 40px;
+	background-color: transparent;
+	padding: 0px;
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.grid-container-8 > div {
+	/* border: 1px solid black; */
+	background-color: transparent;
+	min-height: 0;
+	min-width: 0; 
 }
 
 
+
+
+/*============variable grids============*/
+
+/*============variable grid to adjust for different screen sizes 2 to 1 columns============*/
+
+
+.grid-container-2-1 {
+	display: grid;
+	grid-template-columns: 100%;
+	grid-column-gap: 0px;
+	grid-row-gap: 40px;
+	background-color: transparent;
+	padding: 0px;
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.grid-container-2-1 > div {
+	/* border: 1px solid black; */
+	background-color: transparent;
+	min-height: 0;
+	min-width: 0; 
+}
+
+@media only screen and (min-width: 769px) { /*981px*/
+	.grid-container-2-1 {
+	grid-template-columns: 48.5% 48.5%;
+	grid-column-gap: 3%;
+  }
+}
 
 
 /*============variable grid to adjust for different screen sizes 4 to 2 columns============*/
 
 
-.grid_items {
-	padding: 0px;
-	margin-left: 20px;
-	margin-right: 20px;
+.grid-container-4-2 {
 	display: grid;
-	text-align: center;
-	grid-template-columns: 100%;
-	grid-column-gap: 20px;
+	grid-template-columns: 48.5% 48.5%;
+	grid-column-gap: 3%;
 	grid-row-gap: 40px;
-	margin-bottom: 20px;
-}
-
-.grid_items > div {
 	background-color: transparent;
 	padding: 0px;
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	text-align: center;
 }
 
-
-@media only screen and (min-width: 481px) { /*640px*/
-  .grid_items {
-    grid-template-columns: 48.5% 48.5%;
-    grid-column-gap: 3%;
-  }
+.grid-container-4-2 > div {
+	/* border: 1px solid black; */
+	background-color: transparent;
+	min-height: 0;
+	min-width: 0; 
 }
-
 
 @media only screen and (min-width: 769px) { /*981px*/
-  .grid_items {
-    grid-template-columns: 23.5% 23.5% 23.5% 23.5%;
-    grid-column-gap: 2%;
+	.grid-container-4-2 {
+	grid-template-columns: 23.5% 23.5% 23.5% 23.5%;
+	grid-column-gap: 2%;
   }
 }
 
 
+/*============variable grid to adjust for different screen sizes 3 to 2 to 1 columns============*/
 
 
-/*============variable grid to adjust for different screen sizes 2 to 1 columns============*/
-
-
-.grid_items_2_1 {
+.grid-container-3-2-1 {
+	display: grid;
+	grid-template-columns: 100%;
+	grid-column-gap: 0px;
+	grid-row-gap: 40px;
+	background-color: transparent;
 	padding: 0px;
 	margin-left: 20px;
 	margin-right: 20px;
-	display: grid;
-	text-align: center;
-	grid-template-columns: 100%;
-	grid-column-gap: 20px;
-	grid-row-gap: 40px;
 	margin-bottom: 20px;
-	background-color: light blue; /* not present */
+	text-align: center;
 }
 
-.grid_items_2_1 > div {
-	background-color: light blue; /* transparent */
-	padding: 0px;
+.grid-container-3-2-1 > div {
+	/* border: 1px solid black; */
+	background-color: transparent;
+	min-height: 0;
+	min-width: 0; 
 }
 
+@media only screen and (min-width: 640px) {
+	.grid-container-3-2-1 {
+	grid-template-columns: 48.5% 48.5%;
+	grid-column-gap: 3%;
+  }
+}
 
-@media only screen and (min-width: 481px) { /*640px*/
-  .grid_items_2_1 {
-    grid-template-columns: 100%;
-    grid-column-gap: 0%;
+@media only screen and (min-width: 981px) {
+	.grid-container-3-2-1 {
+	grid-template-columns: 32% 32% 32%;
+	grid-column-gap: 2%;
   }
 }
 
 
-@media only screen and (min-width: 769px) { /*981px*/
-  .grid_items_2_1 {
-    grid-template-columns: 48.5% 48.5%;
-    grid-column-gap: 3%;
-  }
-}
+/*============variable grid to adjust for different screen sizes 4 to 3 to 2 to 1 columns============*/
 
 
-
-
-/*============variable grid to adjust for different screen sizes 5 to 2 columns============*/
-
-
-.grid_items_5_1 {
+.grid-container-4-3-2-1 {
+	display: grid;
+	grid-template-columns: 100%;
+	grid-column-gap: 0px;
+	grid-row-gap: 40px;
+	background-color: transparent;
 	padding: 0px;
 	margin-left: 20px;
 	margin-right: 20px;
-	display: grid;
-	text-align: center;
-	grid-template-columns: 100%;
-	grid-column-gap: 20px;
-	grid-row-gap: 40px;
 	margin-bottom: 20px;
-	background-color: light blue; /* not present */
+	text-align: center;
 }
 
-.grid_items_5_1 > div {
-	background-color: light blue; /* transparent */
-	padding: 0px;
+.grid-container-4-3-2-1 > div {
+	/* border: 1px solid black; */
+	background-color: transparent;
+	min-height: 0;
+	min-width: 0; 
 }
 
+@media only screen and (min-width: 640px) {
+	.grid-container-4-3-2-1 {
+	grid-template-columns: 48.5% 48.5%;
+	grid-column-gap: 3%;
+  }
+}
 
-@media only screen and (min-width: 481px) { /*640px*/
-  .grid_items_5_1 {
-    grid-template-columns: 48.5% 48.5%;
-    grid-column-gap: 3%;
+@media only screen and (min-width: 769px) {
+	.grid-container-4-3-2-1 {
+	grid-template-columns: 32% 32% 32%;
+	grid-column-gap: 2%;
+  }
+}
+
+@media only screen and (min-width: 981px) {
+	.grid-container-4-3-2-1 {
+	grid-template-columns: 23.5% 23.5% 23.5% 23.5%;
+	grid-column-gap: 2%;
   }
 }
 
 
-@media only screen and (min-width: 769px) { /*981px*/
-  .grid_items_5_1 {
-    grid-template-columns: 18% 18% 18% 18% 18%;
-    grid-column-gap: 2.5%;
+/*============variable grid to adjust for different screen sizes 8 to 4 to 2 columns============*/
+
+
+.grid-container-8-4-2 {
+	display: grid;
+	grid-template-columns: 48.5% 48.5%;
+	grid-column-gap: 3%;
+	grid-row-gap: 40px;
+	background-color: transparent;
+	padding: 0px;
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.grid-container-8-4-2 > div {
+	/* border: 1px solid black; */
+	background-color: transparent;
+	min-height: 0;
+	min-width: 0; 
+}
+
+@media only screen and (min-width: 640px) {
+	.grid-container-8-4-2 {
+	grid-template-columns: 23.5% 23.5% 23.5% 23.5%;
+	grid-column-gap: 2%;
+  }
+}
+
+@media only screen and (min-width: 981px) {
+	.grid-container-8-4-2 {
+	grid-template-columns: 10.75% 10.75% 10.75% 10.75% 10.75% 10.75% 10.75% 10.75%;
+	grid-column-gap: 2%;
   }
 }
